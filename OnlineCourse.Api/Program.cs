@@ -16,8 +16,10 @@ using (CustomerDbContext db=new CustomerDbContext())
         Email = "Example2@mail.ru",
         BuyCourse = "PHP"
     };
-    db.Add(customer1);
-    db.Add(customer2);
+    db.Customers.AddRange(customer1,customer2);
+
+    //db.Customers.Add(customer1);
+    //db.Add(customer2);
     db.SaveChanges();
     Console.WriteLine("Malumotlar Saqlandi");
 

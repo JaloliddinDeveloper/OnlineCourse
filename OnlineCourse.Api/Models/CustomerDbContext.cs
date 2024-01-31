@@ -10,7 +10,7 @@ namespace OnlineCourse.Api.Models
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=uu.db");
+            optionsBuilder.UseSqlite("Data Source=ty.db");
         }
     }
 }
